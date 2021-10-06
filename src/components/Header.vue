@@ -19,11 +19,15 @@
                         </nav>
                     </div>
 
-                    <div class="text-center text-white">
-                        <h1 class="title">Untold Stories</h1>
-                        <p>There is an untold story behind every favorite song</p>
-                        <button type="button" class="btn btn-outline-danger">LATEST ALBUM</button>
-                        <button type="button" class="btn btn-outline-danger">LIVE DATES</button>
+                    <div class="container text-center text-white mt-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="title">Untold Stories</h1>
+                                <p class="subtitle">There is an untold story behind every favorite song.</p>
+                                <button type="button" class="btn btn-outline-danger">LATEST ALBUM</button>
+                                <button type="button" class="btn btn-outline-danger">LIVE DATES</button>
+                            </div>
+                        </div>
                     </div>
               </div>
           </div>
@@ -51,6 +55,11 @@ export default {
 h1.title {
     font-family: $fontTitle;
     font-size: 8rem;
+}
+
+p.subtitle {
+    font-family: $fontSubtitle;
+    font-size: 2rem;
 }
 
 </style>

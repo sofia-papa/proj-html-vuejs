@@ -25,6 +25,14 @@ export default {
 @import './style/variable.scss';
 @import './style/general.scss';
 #app {
+
+h1.title{
+  font-family: $fontTitle;
+}
+
+.bg-first-main{
+  background-color: $bgfirstmain;
+}
   
 }
 </style>
