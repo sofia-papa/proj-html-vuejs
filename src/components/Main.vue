@@ -20,24 +20,47 @@
         </div>
       </div>
       <div>
-          <Card />
+          <Card v-for="(band, index) in products" :key= "index" :title= "band.title" :description = "band.description"
+             :src= "band.photo"/>
+          
       </div>
+
+      <div>
+        <Line />
+      </div>
+
+      <div>
+        <Playmusic/>
+      </div>
+
+      <div>
+          <Livedates v-for="(dates, index) in festival" :key= "index" :title= "dates.date"/>
+      </div>
+    
   </div>
 </template>
 
 <script>
-import band from "../data/band.js"
-import Card from './Card.vue'
+import band from "../data/band.js";
+import Card from './Card.vue';
+import Line from './Line.vue';
+import Playmusic from './Playmusic.vue'
+import Livedates from './Livedates.vue'
+import dates from "../data/dates.js";
 
 export default {
     name: "band",
 
     components: {
         Card,
+        Line,
+        Playmusic,
+        Livedates
     },
     data: function() {
         return {
             products: band,
+            festival: dates,
         }
     }
 

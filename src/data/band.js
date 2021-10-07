@@ -1,6 +1,6 @@
 export default [
     {
-         photo: "",
+         photo: "../assets/blog_music_techo-600x300.jpg",
          title: "Technology and music",
          description: "Sed sit amet sem turpis. Curabitur cursus lacinia est at interdum risus id condimentum.",
     },

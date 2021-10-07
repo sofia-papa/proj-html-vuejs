@@ -24,6 +24,7 @@ export default {
 <style lang="scss">
 @import './style/variable.scss';
 @import './style/general.scss';
+@import '~@fortawesome/fontawesome-free/css/all.css';
 #app {
 
 h1.title{
