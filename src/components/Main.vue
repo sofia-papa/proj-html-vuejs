@@ -33,7 +33,7 @@
         <Playmusic/>
       </div>
 
-      <div>
+      <div class="color-text">
           <Livedates v-for="(dates, index) in festival" :key= "index" :title= "dates.date"/>
       </div>
     
@@ -69,5 +69,14 @@ export default {
 
 <style lang="scss">
 
+.color-text{
+    color: #ea4a56;
+    text-transform: uppercase;
+}
+
+.bg-text{
+    background-color: rgb(83, 74, 74) ;
+    
+}
 
 </style>

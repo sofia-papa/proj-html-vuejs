@@ -32,7 +32,7 @@ h1.title{
 }
 
 .bg-first-main{
-  background-color: $bgfirstmain;
+  background-color: $bgsecondmain;
 }
   
 }
