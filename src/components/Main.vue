@@ -18,15 +18,13 @@
                 <p class="subtitle px-5 margin-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
             </div>
         </div>
-        <div>
-           
-        </div>
+      
         <div class="container">
             <div class="row">
               <Cardone />
             </div>
         </div>
-       </div>
+     </div>
 
       <div class="red-line text-center text-white">
          <p>View all live dates</p>
@@ -52,8 +50,7 @@
       <div class="red-line text-center text-white">
          <p>View all live dates</p>
       </div>
-    
-  </div>
+    </div>
 </template>
 
 <script>

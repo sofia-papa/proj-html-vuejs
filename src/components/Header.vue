@@ -18,7 +18,6 @@
                             </button>
                         </nav>
                     </div>
-
               </div>
           </div>
       </div>
@@ -50,7 +49,6 @@ export default {
     height: 100vh;
     width: 100%;
     background-image: url("../assets/home_slider.jpg");
-
 }
 
 h1.title {

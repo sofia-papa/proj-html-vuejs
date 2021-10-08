@@ -60,6 +60,7 @@ li a{
 
   &:hover{
     background-color: ghostwhite;
+    ;
   }
 
 }
@@ -121,7 +122,7 @@ li a{
 }
 
 .jumbo{
-   margin: 0 200px;
+   margin: 0 180px;
 }
 }
 </style>
