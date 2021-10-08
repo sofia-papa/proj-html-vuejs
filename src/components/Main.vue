@@ -22,11 +22,10 @@
       <div>
           <Card v-for="(band, index) in products" :key= "index" :title= "band.title" :description = "band.description"
              :src= "band.photo"/>
-          
       </div>
 
-      <div>
-        <Line />
+      <div class="red-line text-center text-white">
+         <h4>View all live dates</h4>
       </div>
 
       <div>
@@ -36,6 +35,10 @@
       <div class="color-text">
           <Livedates v-for="(dates, index) in festival" :key= "index" :title= "dates.date"/>
       </div>
+
+      <div class="red-line text-center text-white">
+         <h4>View all live dates</h4>
+      </div>
     
   </div>
 </template>
@@ -43,7 +46,6 @@
 <script>
 import band from "../data/band.js";
 import Card from './Card.vue';
-import Line from './Line.vue';
 import Playmusic from './Playmusic.vue'
 import Livedates from './Livedates.vue'
 import dates from "../data/dates.js";
@@ -53,7 +55,6 @@ export default {
 
     components: {
         Card,
-        Line,
         Playmusic,
         Livedates
     },
@@ -77,6 +78,13 @@ export default {
 .bg-text{
     background-color: rgb(83, 74, 74) ;
     
+}
+
+.red-line{
+    height: 100px;
+    background-color: #ea4a56 ;
+    text-transform: uppercase;
+    padding: 2rem;
 }
 
 </style>
