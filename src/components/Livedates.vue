@@ -1,9 +1,9 @@
 <template>
   <div class="bg-color">
-    <div class="container mt-5 color-text">
+    <div class="container mt-1 color-text">
                 <div class="row">
                     <div class="col-12 bg-text " >
-                        <p class="subtitle"><i class="fas fa-plus"></i> {{ title }} </p>
+                        <p class="subtitle my-2"><i class="fas fa-plus mx-2"></i> {{ title }} </p>
                     </div>
                 </div>
             </div>
@@ -27,5 +27,7 @@ export default {
 </script>
 
 <style lang= "scss">
-
+.subtitle{
+    font-size: 0.8rem;
+}
 </style>

@@ -1,21 +1,21 @@
 <template>
   <div class="bg-first-main">
       <div class="container text-center text-white">
-        <div class="row">
-            <div class="col-12">
+        <div class="row ">
+            <div class="col-12 my-5">
                 <h1 class="title">Music is Life</h1>
                 <hr>
-                <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
+                <p class="subtitle px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
             </div>
         </div>
       </div>
 
       <div class="container text-center text-white">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 my-5">
                 <h1 class="title">Latest Band News</h1>
                 <hr>
-                <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
+                <p class="subtitle px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
             </div>
         </div>
       </div>
@@ -25,19 +25,28 @@
       </div>
 
       <div class="red-line text-center text-white">
-         <h4>View all live dates</h4>
+         <p>View all live dates</p>
       </div>
 
       <div>
         <Playmusic/>
       </div>
 
-      <div class="color-text">
+      <div class="container text-white">
+        <div class="row text-center my-5">
+            <div class="col-12">
+                <h1 class="title">Live Dates</h1>
+                <hr>
+                <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
+            </div>
+        </div>
+      <div class="color-text my-5">
           <Livedates v-for="(dates, index) in festival" :key= "index" :title= "dates.date"/>
+      </div>
       </div>
 
       <div class="red-line text-center text-white">
-         <h4>View all live dates</h4>
+         <p>View all live dates</p>
       </div>
     
   </div>
@@ -76,7 +85,7 @@ export default {
 }
 
 .bg-text{
-    background-color: rgb(83, 74, 74) ;
+    background-color: rgb(68, 67, 67) ;
     
 }
 
@@ -84,7 +93,8 @@ export default {
     height: 100px;
     background-color: #ea4a56 ;
     text-transform: uppercase;
-    padding: 2rem;
+    padding: 2.5rem;
+    font-size: 0.8rem;
 }
 
 </style>

@@ -40,7 +40,7 @@ ul{
   display: flex;
   justify-content: end;
   list-style: none;
-  font-family: $fontSubtitle;
+  font-family: $fontText;
   padding: 0 2rem;
  
 }
@@ -58,6 +58,27 @@ li a{
     background-color: ghostwhite;
   }
 
+}
+
+.bg-footer-2{
+  background-color: #2b2b2c;
+  font-family:$fontText;
+  font-size: 0.8rem;
+  color: $bgfirstmain;
+}
+
+.red-line{
+  font-family: $fontText;
+}
+
+.color-text{
+  font-family: $fontText;
+}
+
+.fas.fa-plus{
+  font-size: 5px;
+  color: white;
+  
 }
   
 }
