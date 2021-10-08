@@ -34,6 +34,31 @@ h1.title{
 .bg-first-main{
   background-color: $bgsecondmain;
 }
+
+ul{
+  margin: 25px 0;
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  font-family: $fontSubtitle;
+  padding: 0 2rem;
+ 
+}
+
+li a{
+  padding: 20px;
+  text-decoration: none;
+  color: $bgfirstmain;
+
+  &.active{
+    color: gray;
+  }
+
+  &:hover{
+    background-color: ghostwhite;
+  }
+
+}
   
 }
 </style>
