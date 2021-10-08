@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 @import './style/variable.scss';
 @import './style/general.scss';
 @import '~@fortawesome/fontawesome-free/css/all.css';
@@ -32,6 +32,10 @@ h1.title{
 }
 
 .bg-first-main{
+  background-color: #484852;
+}
+
+.bg-second-main{
   background-color: $bgsecondmain;
 }
 
@@ -80,6 +84,44 @@ li a{
   color: white;
   
 }
+
+.first-square{
+  width: 600px;
+}
+
+.album-wrapper{
+  width: 300px;
   
+  img{
+    width: 290px;
+  }
+}
+
+.height-photo img{
+  height: 635px ;
+  width: 333.33px;
+
+}
+
+#height-photo-2{
+  width: 333.33px;
+}
+  
+.color-text-album{
+  color:$lineColor;
+  font-family: $fontText;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+}
+
+.font-text-album{
+  color: $bgfirstmain;
+  font-size: 0.8rem;
+  padding: 0 1rem;
+}
+
+.jumbo{
+   margin: 0 200px;
+}
 }
 </style>

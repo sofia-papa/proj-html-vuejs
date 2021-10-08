@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-footer bg-dark ">
+  <div class="bg-footer bg-dark">
     <div class="footer-logo px-5 py-5 d-flex justify-content-around">
       <img class="avada-music-logo " src="../assets/avada-music-logo.png" alt="">
     
@@ -29,8 +29,12 @@
 </template>
 
 <script>
+
 export default {
   name: "Footer",
+  components:{
+
+  },
 
   data: function(){
     return {

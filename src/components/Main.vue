@@ -1,28 +1,32 @@
 <template>
-  <div class="bg-first-main">
-      <div class="container text-center text-white">
-        <div class="row ">
-            <div class="col-12 my-5">
-                <h1 class="title">Music is Life</h1>
-                <hr>
-                <p class="subtitle px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
+  <div class="">
+      <div class="bg-first-main text-center text-white ">
+        <div class="row p-5 ">
+            <div class="col-12 my-5 ">
+                <h1 class="title py-5">Music is Life</h1>
+                <hr class="margin-center">
+                <p class="subtitle px-5 margin-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
             </div>
         </div>
       </div>
 
-      <div class="container text-center text-white">
+      <div class="bg-second-main text-center text-white">
         <div class="row">
             <div class="col-12 my-5">
-                <h1 class="title">Latest Band News</h1>
-                <hr>
-                <p class="subtitle px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
+                <h1 class="title py-5">Latest Band News</h1>
+                <hr class="margin-center">
+                <p class="subtitle px-5 margin-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
             </div>
         </div>
-      </div>
-      <div>
-          <Card v-for="(band, index) in products" :key= "index" :title= "band.title" :description = "band.description"
-             :src= "band.photo"/>
-      </div>
+        <div>
+           
+        </div>
+        <div class="container">
+            <div class="row">
+              <Cardone />
+            </div>
+        </div>
+       </div>
 
       <div class="red-line text-center text-white">
          <p>View all live dates</p>
@@ -32,16 +36,16 @@
         <Playmusic/>
       </div>
 
-      <div class="container text-white">
-        <div class="row text-center my-5">
+      <div class="bg-second-main text-white ">
+        <div class="row text-center">
             <div class="col-12">
-                <h1 class="title">Live Dates</h1>
-                <hr>
-                <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
+                <h1 class="title py-5">Live Dates</h1>
+                <hr class="margin-center">
+                <p class="subtitle margin-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur quibusdam vero, itaque eveniet recusandae exercitationem iure odit, dolores natus sequi, ipsa laborum tenetur reiciendis eos iusto omnis aliquam obcaecati!</p>
             </div>
         </div>
-      <div class="color-text my-5">
-          <Livedates v-for="(dates, index) in festival" :key= "index" :title= "dates.date"/>
+      <div class="color-text pb-5">
+          <Livedates class= "" v-for="(dates, index) in festival" :key= "index" :title= "dates.date"/>
       </div>
       </div>
 
@@ -54,18 +58,18 @@
 
 <script>
 import band from "../data/band.js";
-import Card from './Card.vue';
 import Playmusic from './Playmusic.vue'
 import Livedates from './Livedates.vue'
 import dates from "../data/dates.js";
+import Cardone from "./Cardone.vue"
 
 export default {
     name: "band",
 
     components: {
-        Card,
         Playmusic,
-        Livedates
+        Livedates,
+        Cardone,
     },
     data: function() {
         return {
@@ -95,6 +99,10 @@ export default {
     text-transform: uppercase;
     padding: 2.5rem;
     font-size: 0.8rem;
+}
+
+.margin-center{
+    margin: 20px 380px;
 }
 
 </style>

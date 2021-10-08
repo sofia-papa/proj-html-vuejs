@@ -1,10 +1,10 @@
 <template>
-  <div class="header-container clearfix header-wrapper">
+  <div class="header-container header-wrapper">
       <div class="container-fluid">
           <div class="row">
-              <div class="col-12">
-                  <img src="../assets/logo_footer.png" alt="" class="float-left" >
-                  <div class="pos-f-t float-right">
+              <div class="col-12 d-flex justify-content-between">
+                  <img src="../assets/logo_footer.png" alt="" class="float-left m-3 p-3 d-flex" >
+                  <div class="pos-f-t m-3 p-3">
                         <div class="collapse" id="navbarToggleExternalContent" >
                             <div class=" p-4">
                             <h4 class="text-white">Collapsed content</h4>
@@ -19,19 +19,20 @@
                         </nav>
                     </div>
 
-                    <div class="container text-center text-white mt-5">
-                        <div class="row">
-                            <div class="col-12">
-                                <h1 class="title">Untold Stories</h1>
-                                <p class="subtitle">There is an untold story behind every favorite song.</p>
-                                <button type="button" class="btn btn-outline-danger">LATEST ALBUM</button>
-                                <button type="button" class="btn btn-outline-danger">LIVE DATES</button>
-                            </div>
-                        </div>
-                    </div>
               </div>
           </div>
       </div>
+      
+        <div class="container text-center text-white mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title">Untold Stories</h1>
+                    <p class="subtitle">There is an untold story behind every favorite song.</p>
+                    <button type="button" class="btn btn-outline-danger my-5 mx-3">LATEST ALBUM</button>
+                    <button type="button" class="btn btn-outline-danger">LIVE DATES</button>
+                </div>
+            </div>
+        </div>
   </div>
 </template>
 
